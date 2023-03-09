@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập 2.1</title>
+  </head>
+  <body>
+    <!-- generate the form with loginForm -->
+    <h1>Login Form</h1>
+    <form id="login-form">
+      <!-- username-->
+      <label for="username">Username:</label>
+      <input type="email" id="username" name="username" />
+      <br />
+      <br />
+
+      <!-- password -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+      <br />
+      <br />
+
+      <!-- error message -->
+      <output id="error"></output>
+      <br />
+
+      <!-- submit button -->
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script>
+      // declare variables
+      const loginForm = document.getElementById("login-form");
+      const error = document.getElementById("error");
+
+      // add event listener to the form
+      loginForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // prevent the form from submitting
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        // username validation
+        if (!username) {
+          error.textContent = "Please enter a valid email address.";
+          return;
+        }
+
+        // password validation
+        if (!password) {
+          error.textContent = "Please enter a password.";
+          return;
+        }
+
+        // length validation
+        if (password.length < 10) {
+          error.textContent = "Password must be at least 10 characters long.";
+          return;
+        }
+
+        // pattern validation
+        const pattern =
+          /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+])[0-9a-zA-Z!@#$%^&*()_+]{10,}$/;
+        if (!pattern.test(password)) {
+          error.textContent =
+            "Password must contain at least one capital letter, one lowercase letter, one digit, and one special character (!@#$%^&*()_+).";
+          return;
+        }
+
+        // if all validations pass, submit the form
+        loginForm.submit();
+
+        // announce success
+        error.textContent = "Success!";
+      });
+    </script>
+  </body>
+</html>
